@@ -32,7 +32,7 @@ if (len(sys.argv) >= 2 and sys.argv[1] == 'runserver'):
 else:
    DEBUG = False
 
-ALLOWED_HOSTS = ['taskmngapi.herokuapp.com/']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -49,8 +49,8 @@ INSTALLED_APPS = [
     'taskManager',
     'corsheaders',
     'django_filters',
-    'authentication',
-    'drf_yasg', 
+    'authentications',
+    'drf_yasg'
 
 ] 
 SWAGGER_SETTINGS={
@@ -157,7 +157,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField' 
-AUTH_USER_MODEL='authentication.User' 
+AUTH_USER_MODEL='authentications.User' 
 
 EMAIL_USE_TLS=True
 EMAIL_HOST='smtp.gmail.com'
