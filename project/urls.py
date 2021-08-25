@@ -23,8 +23,8 @@ schema_view = get_schema_view(
    openapi.Info(
       title="TaskManager API",
       default_version='v1',
-      description='''Task Manager project, Register with a valid email and get a token to verify email
-      In order to login'.''',
+      description='''Task Manager project, to test this API you need to register with a valid email
+      ,copy a token sent to your email past it to the verify-email and authorize to POST,GET,and PATCH .''',
       terms_of_service="https://www.google.com/policies/terms/",
       contact=openapi.Contact(email="contact@snippets.local"),
       license=openapi.License(name="BSD License"),
